@@ -1,0 +1,33 @@
+function greatestvalue(num1, num2, num3){
+    if(num1 > num2 && num1 > num3){
+        return "Greates Value: " + num1;
+    }else if(num2 > num1 && num2 > num3){
+        return "Greates Value: " + num2;
+    }else if(num3 > num1 && num3 > num2){
+        return "Greates Value: " + num3;
+    }
+    
+    return "All Values are the Same";
+
+}
+
+console.log(greatestvalue(4,7,3));
+
+
+function AreaofCircle(radius){
+
+    var area = Math.PI * Math.pow(radius, 2);
+    return area;
+}
+
+var radius = 3;
+var circleArea = AreaofCircle(radius);
+console.log("The area of Circle with the radius", radius, "is", circleArea);
+
+
+function fullname(fname, mname, lname){
+    console.log("Welcome, " + lname.toUpperCase() + ", " + fname[0].toUpperCase() + fname.slice(1) + ", " + mname[0].toUpperCase() + ".");
+
+}
+
+fullname("jeremy" , "butalid" , "labial");
